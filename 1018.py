@@ -1,6 +1,6 @@
-temp = int(input())
-velo = int(input())
-
-dist= temp*velo
-litro= dist/12
-print(f"{litro:.3f}")
+N = int(input())
+print(N)
+for nota in [100, 50, 20, 10, 5, 2, 1]:
+    qnt = N // nota
+    print(f"{qnt} nota(s) de R$ {nota},00")
+    N %= nota
